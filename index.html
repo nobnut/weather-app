@@ -1,0 +1,45 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1 id="location">Fetching location...</h1>
+            <p id="sun-status">--</p>
+        </header>
+
+        <section class="radar-container">
+            <iframe id="radar-map" title="Rain Radar Map"></iframe>
+        </section>
+
+        <section class="chart-container">
+            <canvas id="rain-chart"></canvas>
+        </section>
+
+        <section class="current-conditions">
+            <div class="condition-item">
+                <span class="label">Temperature</span>
+                <span id="temperature" class="value">-- °C</span>
+            </div>
+            <div class="condition-item">
+                <span class="label">Wind</span>
+                <span id="wind" class="value">-- mph</span>
+            </div>
+            <div class="condition-item">
+                <span class="label">Pressure</span>
+                <span id="pressure" class="value">-- mb</span>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
